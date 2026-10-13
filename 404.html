@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-root="/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Anjan Roy</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/">Anjan Roy</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/#research">Research</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#cv">CV</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="menu-btn" type="button" data-open-palette aria-haspopup="dialog">
+          Menu <kbd data-shortcut>Ctrl K</kbd>
+        </button>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <div class="lost">
+      <div>
+        <h1 class="page-title">Illegal move</h1>
+        <p class="page-intro">There’s no page at this address. The link may have a typo, or the page may have moved.</p>
+        <div class="actions">
+          <a class="btn" href="/">Go to the homepage</a>
+          <a class="btn btn-quiet" href="/blog/">Read the blog</a>
+        </div>
+      </div>
+      <div class="board" data-board aria-hidden="true"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Anjan Roy</p>
+      <p class="footer-hint">Press <kbd data-shortcut>Ctrl K</kbd> to jump anywhere on the site.</p>
+    </div>
+  </footer>
+
+  <script>
+    // A knight on f3 and the squares it could legally reach. This page isn't one of them.
+    (function () {
+      var board = document.querySelector("[data-board]");
+      var knight = [5, 5]; // column, row (0-based, from the top-left)
+      var moves = [[1, 2], [2, 1], [-1, 2], [-2, 1], [1, -2], [2, -1], [-1, -2], [-2, -1]];
+      for (var r = 0; r < 8; r++) {
+        for (var c = 0; c < 8; c++) {
+          var sq = document.createElement("span");
+          if ((r + c) % 2 === 1) sq.className = "dark";
+          if (c === knight[0] && r === knight[1]) sq.textContent = "\u265E\uFE0E";
+          moves.forEach(function (m) {
+            if (knight[0] + m[0] === c && knight[1] + m[1] === r) sq.className += " target";
+          });
+          board.appendChild(sq);
+        }
+      }
+    })();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

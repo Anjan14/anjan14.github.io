@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Anjan Roy</title>
+  <meta name="description" content="A post by Anjan Roy.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://anjan14.github.io/assets/img/og-image.jpg">
+
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="blog-post">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" data-progress aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../">Anjan Roy</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../#research">Research</a></li>
+          <li><a href="../#projects">Projects</a></li>
+          <li><a href="../#cv">CV</a></li>
+          <li><a href="./" aria-current="page">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="menu-btn" type="button" data-open-palette aria-haspopup="dialog">
+          Menu <kbd data-shortcut>Ctrl K</kbd>
+        </button>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <article class="post" data-post>
+      <a class="back-link" href="./">All posts</a>
+      <p class="muted" data-post-loading>Loading the post…</p>
+    </article>
+    <nav class="post-nav" data-post-nav aria-label="More posts" hidden></nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Anjan Roy</p>
+      <p class="footer-hint">Press <kbd data-shortcut>Ctrl K</kbd> to jump anywhere on the site.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/vendor/marked.min.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/blog.js" defer></script>
+</body>
+</html>

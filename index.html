@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en" data-root="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anjan Roy | Explainable AI, NLP and AI's social impact</title>
+  <meta name="description" content="Anjan Roy is a computer science researcher (BS and MS, Missouri State University) working on explainable AI, natural language processing, and the impact of AI on overlooked communities. Looking for PhD opportunities.">
+  <meta name="author" content="Anjan Roy">
+  <link rel="canonical" href="https://anjan14.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anjan14.github.io/">
+  <meta property="og:title" content="Anjan Roy">
+  <meta property="og:description" content="Computer science researcher working on explainable AI, NLP, and the impact of AI on overlooked communities.">
+  <meta property="og:image" content="https://anjan14.github.io/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Apply the saved theme before the page paints, so there is no flash -->
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anjan Roy",
+    "alternateName": "Anjan Kishore Roy",
+    "url": "https://anjan14.github.io/",
+    "image": "https://anjan14.github.io/assets/img/anjan-roy.jpg",
+    "email": "mailto:ar567s@missouristate.edu",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Missouri State University" },
+    "knowsAbout": ["Explainable AI", "Natural language processing", "Data science", "Societal impact of AI"],
+    "sameAs": [
+      "https://github.com/Anjan14",
+      "https://www.linkedin.com/in/anjan-roy14/",
+      "https://www.instagram.com/_anjanroy/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./">Anjan Roy</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="blog/">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="menu-btn" type="button" data-open-palette aria-haspopup="dialog">
+          Menu <kbd data-shortcut>Ctrl K</kbd>
+        </button>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <div class="wrap">
+      <section class="hero" aria-labelledby="name">
+        <div class="hero-text">
+          <h1 class="hero-name" id="name"><span>Anjan</span><span>Roy</span></h1>
+          <p class="hero-tagline">I like to solve problems that irritate me.</p>
+          <p class="hero-intro">
+            Computer science researcher working on multi-objective optimization, natural language processing,
+            and how AI development affects communities that are usually overlooked.
+            BS and MS from Missouri State University, now looking for PhD opportunities.
+          </p>
+          <ul class="hero-links">
+            <li><a href="mailto:ar567s@missouristate.edu">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/anjan-roy14/" rel="me noopener" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Anjan14" rel="me noopener" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/_anjanroy/" rel="me noopener" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+
+        <figure class="portrait-figure">
+          <div class="portrait" data-portrait>
+            <picture>
+              <source srcset="assets/img/anjan-roy.webp" type="image/webp">
+              <img class="portrait-base" src="assets/img/anjan-roy.jpg" width="960" height="1200" alt="Anjan Roy smiling, sitting in front of a brick wall">
+            </picture>
+            <picture>
+              <source srcset="assets/img/anjan-roy.webp" type="image/webp">
+              <img class="portrait-color" src="assets/img/anjan-roy.jpg" width="960" height="1200" alt="" aria-hidden="true">
+            </picture>
+          </div>
+          <figcaption class="portrait-caption">
+            <span class="on-pointer">Move your cursor over the photo to bring back the color.</span>
+            <span class="on-touch">Tap the photo to bring back the color.</span>
+          </figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <!-- ============ About ============ -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-head"><h2 class="section-title" id="about-title">About</h2></div>
+        <div class="section-body prose-lg">
+          <p>
+            I always give variables proper names. I like playing chess, soccer, and swimming in the ocean,
+            and I love reading ancient history, philosophy, and anything that gives me a new perspective on life.
+          </p>
+          <p>
+            I completed my BS and MS in Computer Science at Missouri State University. Now I’m looking for
+            PhD opportunities where I can do impactful research that serves the best interests of human life.
+            I strongly believe there is no point in doing research if it doesn’t make someone’s life a little
+            better than it was yesterday.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ Research ============ -->
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-head"><h2 class="section-title" id="research-title">Research</h2></div>
+        <div class="section-body">
+          <div class="prose-lg">
+            <p>
+              Large language models are advancing faster than the guardrails meant to keep them from acting
+              irrationally, and because our societies are organized around profit and an illusion of competition,
+              pausing that progress isn’t realistic. I think the most plausible way to protect people’s interests
+              is rigorous scholarship, both qualitative and quantitative, that explains how these systems reason
+              when they make decisions. That understanding lets researchers show a broader audience how AI
+              development affects marginalized communities. The nonlinear path of my own life and interests is a
+              big part of why I care about this direction.
+            </p>
+          </div>
+
+          <h3 class="subhead">Interests</h3>
+          <ul class="interest-list">
+            <li>Societal and environmental impact of AI on traditionally overlooked, marginalized communities</li>
+            <li>Explainable AI</li>
+            <li>Natural language processing</li>
+            <li>Data science and analytics</li>
+          </ul>
+
+          <h3 class="subhead" id="work-title">Research experience</h3>
+          <fieldset class="filter" data-filter aria-describedby="filter-status">
+            <legend class="visually-hidden">Filter research by topic</legend>
+            <button class="chip" type="button" data-topic="all" aria-pressed="true">All topics</button>
+          </fieldset>
+          <p class="filter-status" id="filter-status" aria-live="polite"></p>
+
+          <div class="work-group" data-group>
+            <div class="work-group-head">
+              <h3>Graduate research, Missouri State University</h3>
+              <span class="dates">Jan 2025 – May 2026</span>
+            </div>
+            <ul class="work-list">
+              <li data-topics="Generative models">
+                <details class="work">
+                  <summary>
+                    <span class="work-title">GenMOR: generative models for multi-objective planning</span>
+                    <span class="work-summary">Can a generative model learn what makes a plan Pareto-optimal just from data? Work in progress.</span>
+                    <span class="work-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div class="work-detail">
+                    <p>
+                      GenMOR is a generative learning framework that extends the MORNP-DEC multi-objective planning problem.
+                      I train plain autoencoder and variational autoencoder (VAE) architectures on synthetically generated,
+                      structured plan vectors to learn latent representations, generate new candidate plans, and test whether
+                      generative models can implicitly capture Pareto dominance from data.
+                    </p>
+                    <ul class="tags"><li>Generative models</li><li>VAEs</li><li>Multi-objective planning</li></ul>
+                  </div>
+                </details>
+              </li>
+              <li data-topics="Explainable AI">
+                <details class="work">
+                  <summary>
+                    <span class="work-title">Meta-ensemble explainable AI</span>
+                    <span class="work-summary">A framework that learns to combine LIME, SHAP and Grad-CAM into more reliable visual explanations.</span>
+                    <span class="work-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div class="work-detail">
+                    <p>
+                      Instead of trusting a single explanation method, this framework integrates several (LIME, SHAP and Grad-CAM)
+                      and learns how to combine them into one visual attribution. It showed improved fidelity, stability and
+                      sparsity compared with each method on its own.
+                    </p>
+                    <ul class="tags"><li>Explainable AI</li><li>LIME</li><li>SHAP</li><li>Grad-CAM</li></ul>
+                  </div>
+                </details>
+              </li>
+              <li data-topics="NLP">
+                <details class="work">
+                  <summary>
+                    <span class="work-title">Question answering that knows when not to answer</span>
+                    <span class="work-summary">BERT fine-tuned on SQuAD 2.0 with an answerability classifier and calibrated confidence scores.</span>
+                    <span class="work-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div class="work-detail">
+                    <p>
+                      A calibration-aware extractive QA system: BERT fine-tuned on SQuAD 2.0, augmented with an answerability
+                      classifier and a confidence-scoring component. The model is trained to predict answer spans while learning
+                      to abstain from unanswerable questions, and to produce confidence scores that genuinely reflect how likely
+                      an answer is to be correct.
+                    </p>
+                    <ul class="tags"><li>NLP</li><li>BERT</li><li>Calibration</li></ul>
+                  </div>
+                </details>
+              </li>
+              <li data-topics="NLP|Data science">
+                <details class="work">
+                  <summary>
+                    <span class="work-title">Spam classification across datasets</span>
+                    <span class="work-summary">Generative vs. discriminative models on SMS and email spam, including a Naive Bayes classifier built from scratch.</span>
+                    <span class="work-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div class="work-detail">
+                    <p>
+                      A pipeline comparing generative and discriminative models, including a custom multinomial Naive Bayes
+                      implementation, on the SMS Spam Collection (5,574 messages) and a large Enron-style email corpus
+                      (421,796 messages), with chi-square and mutual-information feature selection.
+                    </p>
+                    <p>
+                      Linear SVM performed best on SMS (F1 0.947), while the custom Naive Bayes slightly outperformed the
+                      discriminative baselines on email (F1 0.988). Aggressive univariate feature pruning substantially hurt
+                      recall for generative models while giving discriminative models only marginal efficiency gains.
+                    </p>
+                    <ul class="tags"><li>NLP</li><li>Data science</li><li>Naive Bayes</li><li>SVM</li></ul>
+                  </div>
+                </details>
+              </li>
+            </ul>
+          </div>
+
+          <div class="work-group" data-group>
+            <div class="work-group-head">
+              <h3>Undergraduate research, Missouri State University</h3>
+              <span class="dates">Jan 2021 – Dec 2024</span>
+            </div>
+            <ul class="work-list">
+              <li data-topics="Robotics and simulation">
+                <details class="work">
+                  <summary>
+                    <span class="work-title">Autonomous vessel navigation in simulation</span>
+                    <span class="work-summary">Maritime environments in Panda3D for testing how autonomous surface vehicles plan safe paths.</span>
+                    <span class="work-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div class="work-detail">
+                    <p>
+                      I designed realistic maritime simulation environments in the Panda3D game engine to evaluate autonomous
+                      surface vehicle (ASV) navigation, integrating AI path-finding and collision avoidance with motion-planning
+                      approaches including Velocity Obstacles (VO), Rapidly-exploring Random Trees (RRT), and hybrid
+                      VO-RRT planning that follows COLREGs, the international rules for avoiding collisions at sea.
+                    </p>
+                    <p>
+                      Results: navigation efficiency up 30%, potential collision rates down 25%, and trajectory accuracy up 20%.
+                    </p>
+                    <ul class="tags"><li>Motion planning</li><li>RRT</li><li>Panda3D</li></ul>
+                  </div>
+                </details>
+              </li>
+              <li data-topics="Data science">
+                <details class="work">
+                  <summary>
+                    <span class="work-title">Real-time eye-tracking analytics</span>
+                    <span class="work-summary">A consent-first system that turns gaze data into engagement maps for web design.</span>
+                    <span class="work-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div class="work-detail">
+                    <p>
+                      User interactions were captured with HTML and JavaScript behind fully compliant consent management. A Python
+                      and Flask backend processed over 1,000 gaze data points per session into line-of-sight engagement maps,
+                      and design changes based on those maps increased user engagement by 15%.
+                    </p>
+                    <ul class="tags"><li>Data science</li><li>Flask</li><li>HCI</li></ul>
+                  </div>
+                </details>
+              </li>
+              <li data-topics="Systems">
+                <details class="work">
+                  <summary>
+                    <span class="work-title">Guish Shell</span>
+                    <span class="work-summary">A custom Unix/Linux shell written in C.</span>
+                    <span class="work-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div class="work-detail">
+                    <p>
+                      A command-line shell with command execution, history management, error handling, scripting support and
+                      custom plugins. Refining memory management and process control cut command execution time by 20% and peak
+                      CPU usage by 25%, and the shell earned a 95% positive rating in user testing.
+                    </p>
+                    <ul class="tags"><li>C</li><li>Operating systems</li></ul>
+                  </div>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Projects ============ -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-head"><h2 class="section-title" id="projects-title">Projects</h2></div>
+        <div class="section-body section-body-wide">
+
+          <article class="project" aria-labelledby="genmor-title">
+            <div class="project-text">
+              <h3 class="project-title" id="genmor-title">GenMOR</h3>
+              <p class="project-status">Current project, manuscript in preparation</p>
+              <p>
+                When a plan has to balance several goals at once, there is rarely a single best answer. Instead there is a
+                set of trade-offs, the Pareto front, where improving one goal means giving up another.
+              </p>
+              <p>
+                GenMOR trains autoencoders and variational autoencoders on structured plan vectors to learn compact
+                representations of plans, generate new candidate plans, and test whether a generative model can pick up
+                Pareto dominance from data alone.
+              </p>
+              <p class="project-more">A full write-up is coming soon.</p>
+            </div>
+            <figure class="demo" data-pareto>
+              <div class="demo-frame">
+                <svg viewBox="0 0 400 300" role="img" aria-labelledby="pareto-desc">
+                  <desc id="pareto-desc">A scatter plot of randomly generated plans scored on two objectives. Filled dots form the Pareto front.</desc>
+                </svg>
+              </div>
+              <div class="demo-bar">
+                <p class="demo-readout" aria-live="polite">Each dot is a plan. Filled dots are on the Pareto front: no other plan is better on both objectives. Point at a dot to see which plans beat it.</p>
+                <button class="btn btn-quiet" type="button" data-resample>Draw new plans</button>
+              </div>
+              <figcaption class="demo-note">Illustration with random data, not results from GenMOR.</figcaption>
+            </figure>
+          </article>
+
+          <article class="project" aria-labelledby="asv-title">
+            <div class="project-text">
+              <h3 class="project-title" id="asv-title">Autonomous surface vehicles</h3>
+              <p class="project-status">Undergraduate research, 2021–2024</p>
+              <p>
+                Realistic maritime simulations built in Panda3D to evaluate how autonomous surface vehicles navigate:
+                finding a path, avoiding collisions, and planning a safe trajectory.
+              </p>
+              <p>
+                I integrated and tested motion-planning approaches including Velocity Obstacles, Rapidly-exploring
+                Random Trees (RRT), and hybrid VO-RRT planning that follows COLREGs, the international rules for avoiding
+                collisions at sea. The work improved navigation efficiency by 30% and reduced potential collision rates by 25%.
+              </p>
+              <p class="project-more">A full write-up is coming soon.</p>
+            </div>
+            <figure class="demo" data-rrt>
+              <div class="demo-frame">
+                <svg viewBox="0 0 400 300" role="img" aria-labelledby="rrt-desc">
+                  <desc id="rrt-desc">A basic RRT planner exploring a map with circular obstacles and drawing a route from start to goal.</desc>
+                </svg>
+              </div>
+              <div class="demo-bar">
+                <p class="demo-readout" aria-live="polite">Grey branches are moves the planner explored. The black line is the route it found.</p>
+                <button class="btn btn-quiet" type="button" data-replan>Plan a new route</button>
+              </div>
+              <figcaption class="demo-note">A simple RRT running in your browser, not the full research simulator.</figcaption>
+            </figure>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ============ Publications ============ -->
+      <section class="section" id="publications" aria-labelledby="pubs-title">
+        <div class="section-head"><h2 class="section-title" id="pubs-title">Publications</h2></div>
+        <div class="section-body">
+          <p class="pub">
+            <cite class="pub-title">GenMOR: Learning and Generating Pareto-Aware Solutions for Multi-Objective Planning with Variational Autoencoders</cite>
+            <span class="pub-authors"><strong>A. K. Roy</strong>, S. Hasnayeen, H. Rahamani</span>
+            <span class="pub-venue">Manuscript in preparation</span>
+          </p>
+        </div>
+      </section>
+
+      <div id="cv">
+        <!-- ============ Experience ============ -->
+        <section class="section" id="experience" aria-labelledby="exp-title">
+          <div class="section-head"><h2 class="section-title" id="exp-title">Experience</h2></div>
+          <div class="section-body">
+            <ol class="timeline">
+              <li>
+                <span class="when">Jan 2025 – present</span>
+                <div>
+                  <h3>Debate Coach</h3>
+                  <p class="where">Holt V. Spicer Debate Forum, Missouri State University</p>
+                  <ul>
+                    <li>Coach college policy debaters (NDT/CEDA) in critical arguments, guiding their research on how US labor policy, immigration policy and workplace AI affect overlooked communities, including migrant and undocumented workers, queer and trans workers, and communities in the Global South.</li>
+                    <li>Teach students to find, evaluate and synthesize scholarship from law, sociology and critical theory, including work on AI misinformation and the Global South’s exclusion from AI governance, with an emphasis on judging source credibility and defining key terms precisely.</li>
+                    <li>Mentor students in building cases around community narratives and storytelling as forms of knowledge production, centering migrant and queer experiences of labor. Also judge collegiate rounds on the collective bargaining and arms transfer topics.</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- ============ Education ============ -->
+        <section class="section" id="education" aria-labelledby="edu-title">
+          <div class="section-head"><h2 class="section-title" id="edu-title">Education</h2></div>
+          <div class="section-body">
+            <ol class="timeline">
+              <li>
+                <span class="when">Jan 2025 – May 2026</span>
+                <div>
+                  <h3>MS in Computer Science</h3>
+                  <p class="where">Missouri State University, with a Data Science Certification</p>
+                  <ul>
+                    <li>Coursework: Data Analytics, Introduction to AI, Explainable AI, Natural Language Processing, Generative AI</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="when">Aug 2020 – Dec 2024</span>
+                <div>
+                  <h3>BS in Computer Science, minor in Mathematics</h3>
+                  <p class="where">Missouri State University</p>
+                  <ul>
+                    <li>Coursework: Calculus I and II, Discrete Mathematics, Statistics, Data Mining</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- ============ Awards ============ -->
+        <section class="section" id="awards" aria-labelledby="awards-title">
+          <div class="section-head"><h2 class="section-title" id="awards-title">Awards</h2></div>
+          <div class="section-body">
+            <ul class="plain-list">
+              <li>International Excellence Award <span class="detail">Missouri State University</span></li>
+              <li>Top 5 speaker, Hoosier Invitational debate tournament <span class="detail">Indiana University Bloomington</span></li>
+              <li>Physics, Astronomy, and Materials Science Department Scholarship <span class="detail">Missouri State University</span></li>
+              <li>Holt V. Spicer Debate Forum Scholarship <span class="detail">Missouri State University</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============ Skills ============ -->
+        <section class="section" id="skills" aria-labelledby="skills-title">
+          <div class="section-head"><h2 class="section-title" id="skills-title">Skills</h2></div>
+          <div class="section-body">
+            <dl class="skills">
+              <dt>Programming</dt><dd>Python, C, C++, Java</dd>
+              <dt>Machine learning</dt><dd>PyTorch, TensorFlow, Keras, scikit-learn, Apache Spark MLlib</dd>
+              <dt>Explainability</dt><dd>LIME, SHAP, Grad-CAM, LRP, SmoothGrad</dd>
+              <dt>Data and visualization</dt><dd>pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly</dd>
+              <dt>NLP and vision</dt><dd>spaCy, OpenCV</dd>
+              <dt>Simulation and 3D</dt><dd>Panda3D, Unity ML-Agents, Blender</dd>
+              <dt>Databases</dt><dd>MySQL, Firebase</dd>
+              <dt>Tools</dt><dd>Git, GitHub, Jira, Jupyter Notebook, Google Colab</dd>
+              <dt>Languages</dt><dd>English (proficient), Bengali (native), Hindi (speaking proficiency), French (elementary), Greek (elementary)</dd>
+            </dl>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============ Contact ============ -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="section-head"><h2 class="section-title" id="contact-title">Contact</h2></div>
+        <div class="section-body">
+          <p class="contact-lead">If you work on explainable AI, NLP or the social side of AI, or you just want to talk chess or ancient history, I’d like to hear from you.</p>
+          <div class="contact-email">
+            <a href="mailto:ar567s@missouristate.edu">ar567s@missouristate.edu</a>
+            <button class="btn btn-quiet" type="button" data-copy-email>Copy email</button>
+          </div>
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/anjan-roy14/" rel="me noopener" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Anjan14" rel="me noopener" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/_anjanroy/" rel="me noopener" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Anjan Roy</p>
+      <p class="footer-hint">Press <kbd data-shortcut>Ctrl K</kbd> to jump anywhere on the site.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/demos.js" defer></script>
+</body>
+</html>
