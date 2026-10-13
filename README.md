@@ -2,7 +2,6 @@
 
 Personal website of Anjan Roy, live at **https://anjan14.github.io**.
 
-Plain HTML, CSS and JavaScript. No build step: edit a file on GitHub, commit, and the site updates in a minute or two.
 
 ## What's where
 
