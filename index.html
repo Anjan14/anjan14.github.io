@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anjan Roy | Explainable AI, NLP and AI's social impact</title>
-  <meta name="description" content="Anjan Roy is a computer science researcher (BS and MS, Missouri State University) working on explainable AI, natural language processing, and the impact of AI on overlooked communities. Looking for PhD opportunities.">
+  <title>Anjan Roy | Computer science researcher</title>
+  <meta name="description" content="Anjan Roy is a computer science researcher (BS and MS, Missouri State University) working on generative models, multi-objective optimization and natural language processing. Looking for PhD opportunities.">
   <meta name="author" content="Anjan Roy">
   <link rel="canonical" href="https://anjan14.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://anjan14.github.io/">
   <meta property="og:title" content="Anjan Roy">
-  <meta property="og:description" content="Computer science researcher working on explainable AI, NLP, and the impact of AI on overlooked communities.">
+  <meta property="og:description" content="Computer science researcher working on generative models, multi-objective optimization and natural language processing.">
   <meta property="og:image" content="https://anjan14.github.io/assets/img/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -45,7 +45,7 @@
     "image": "https://anjan14.github.io/assets/img/anjan-roy.jpg",
     "email": "mailto:ar567s@missouristate.edu",
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Missouri State University" },
-    "knowsAbout": ["Explainable AI", "Natural language processing", "Data science", "Societal impact of AI"],
+    "knowsAbout": ["Generative AI", "Multi-objective optimization", "Natural language processing", "Uncertainty and latent-variable models", "Reinforcement learning", "Data science"],
     "sameAs": [
       "https://github.com/Anjan14",
       "https://www.linkedin.com/in/anjan-roy14/",
@@ -141,22 +141,20 @@
         <div class="section-body">
           <div class="prose-lg">
             <p>
-              Large language models are advancing faster than the guardrails meant to keep them from acting
-              irrationally, and because our societies are organized around profit and an illusion of competition,
-              pausing that progress isn’t realistic. I think the most plausible way to protect people’s interests
-              is rigorous scholarship, both qualitative and quantitative, that explains how these systems reason
-              when they make decisions. That understanding lets researchers show a broader audience how AI
-              development affects marginalized communities. The nonlinear path of my own life and interests is a
-              big part of why I care about this direction.
+              My current work, GenMOR, asks whether a variational autoencoder can learn what makes a plan
+              Pareto-optimal from data alone. I’ve also built a question-answering model that abstains when a
+              question has no answer and gives confidence scores that reflect how likely it is to be right.
             </p>
           </div>
 
           <h3 class="subhead">Interests</h3>
           <ul class="interest-list">
-            <li>Societal and environmental impact of AI on traditionally overlooked, marginalized communities</li>
-            <li>Explainable AI</li>
+            <li>Uncertainty and latent-variable models</li>
+            <li>Generative AI</li>
             <li>Natural language processing</li>
+            <li>Reinforcement learning</li>
             <li>Data science and analytics</li>
+            <li>Large-scale predictive modeling</li>
           </ul>
 
           <h3 class="subhead" id="work-title">Research experience</h3>
@@ -168,8 +166,8 @@
 
           <div class="work-group" data-group>
             <div class="work-group-head">
-              <h3>Graduate research, Missouri State University</h3>
-              <span class="dates">Jan 2025 – May 2026</span>
+              <h3>Graduate and undergraduate research, Missouri State University</h3>
+              <span class="dates">Jan 2021 – May 2026</span>
             </div>
             <ul class="work-list">
               <li data-topics="Generative models">
@@ -190,24 +188,7 @@
                   </div>
                 </details>
               </li>
-              <li data-topics="Explainable AI">
-                <details class="work">
-                  <summary>
-                    <span class="work-title">Meta-ensemble explainable AI</span>
-                    <span class="work-summary">A framework that learns to combine LIME, SHAP and Grad-CAM into more reliable visual explanations.</span>
-                    <span class="work-toggle" aria-hidden="true"></span>
-                  </summary>
-                  <div class="work-detail">
-                    <p>
-                      Instead of trusting a single explanation method, this framework integrates several (LIME, SHAP and Grad-CAM)
-                      and learns how to combine them into one visual attribution. It showed improved fidelity, stability and
-                      sparsity compared with each method on its own.
-                    </p>
-                    <ul class="tags"><li>Explainable AI</li><li>LIME</li><li>SHAP</li><li>Grad-CAM</li></ul>
-                  </div>
-                </details>
-              </li>
-              <li data-topics="NLP">
+              <li data-topics="NLP|Uncertainty">
                 <details class="work">
                   <summary>
                     <span class="work-title">Question answering that knows when not to answer</span>
@@ -222,6 +203,23 @@
                       an answer is to be correct.
                     </p>
                     <ul class="tags"><li>NLP</li><li>BERT</li><li>Calibration</li></ul>
+                  </div>
+                </details>
+              </li>
+              <li data-topics="Explainable AI">
+                <details class="work">
+                  <summary>
+                    <span class="work-title">Meta-ensemble explainable AI</span>
+                    <span class="work-summary">A framework that learns to combine LIME, SHAP and Grad-CAM into more reliable visual explanations.</span>
+                    <span class="work-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div class="work-detail">
+                    <p>
+                      Instead of trusting a single explanation method, this framework integrates several (LIME, SHAP and Grad-CAM)
+                      and learns how to combine them into one visual attribution. It showed improved fidelity, stability and
+                      sparsity compared with each method on its own.
+                    </p>
+                    <ul class="tags"><li>Explainable AI</li><li>LIME</li><li>SHAP</li><li>Grad-CAM</li></ul>
                   </div>
                 </details>
               </li>
@@ -244,36 +242,6 @@
                       recall for generative models while giving discriminative models only marginal efficiency gains.
                     </p>
                     <ul class="tags"><li>NLP</li><li>Data science</li><li>Naive Bayes</li><li>SVM</li></ul>
-                  </div>
-                </details>
-              </li>
-            </ul>
-          </div>
-
-          <div class="work-group" data-group>
-            <div class="work-group-head">
-              <h3>Undergraduate research, Missouri State University</h3>
-              <span class="dates">Jan 2021 – Dec 2024</span>
-            </div>
-            <ul class="work-list">
-              <li data-topics="Robotics and simulation">
-                <details class="work">
-                  <summary>
-                    <span class="work-title">Autonomous vessel navigation in simulation</span>
-                    <span class="work-summary">Maritime environments in Panda3D for testing how autonomous surface vehicles plan safe paths.</span>
-                    <span class="work-toggle" aria-hidden="true"></span>
-                  </summary>
-                  <div class="work-detail">
-                    <p>
-                      I designed realistic maritime simulation environments in the Panda3D game engine to evaluate autonomous
-                      surface vehicle (ASV) navigation, integrating AI path-finding and collision avoidance with motion-planning
-                      approaches including Velocity Obstacles (VO), Rapidly-exploring Random Trees (RRT), and hybrid
-                      VO-RRT planning that follows COLREGs, the international rules for avoiding collisions at sea.
-                    </p>
-                    <p>
-                      Results: navigation efficiency up 30%, potential collision rates down 25%, and trajectory accuracy up 20%.
-                    </p>
-                    <ul class="tags"><li>Motion planning</li><li>RRT</li><li>Panda3D</li></ul>
                   </div>
                 </details>
               </li>
@@ -303,9 +271,9 @@
                   </summary>
                   <div class="work-detail">
                     <p>
-                      A command-line shell with command execution, history management, error handling, scripting support and
-                      custom plugins. Refining memory management and process control cut command execution time by 20% and peak
-                      CPU usage by 25%, and the shell earned a 95% positive rating in user testing.
+                      A command-line shell with command execution, history management and robust error handling, extended
+                      with scripting support and custom plugins. I also improved its efficiency by refining memory management
+                      and process control.
                     </p>
                     <ul class="tags"><li>C</li><li>Operating systems</li></ul>
                   </div>
@@ -352,16 +320,16 @@
 
           <article class="project" aria-labelledby="asv-title">
             <div class="project-text">
-              <h3 class="project-title" id="asv-title">Autonomous surface vehicles</h3>
-              <p class="project-status">Undergraduate research, 2021–2024</p>
+              <h3 class="project-title" id="asv-title">Autonomous surface vessels</h3>
+              <p class="project-status">AIG Lab, Missouri State University, 2024</p>
               <p>
-                Realistic maritime simulations built in Panda3D to evaluate how autonomous surface vehicles navigate:
-                finding a path, avoiding collisions, and planning a safe trajectory.
+                Maritime simulation environments built in Panda3D to test how autonomous surface vessels navigate
+                head-on, crossing, overtaking, multi-vessel and traffic-separation-scheme scenarios.
               </p>
               <p>
-                I integrated and tested motion-planning approaches including Velocity Obstacles, Rapidly-exploring
-                Random Trees (RRT), and hybrid VO-RRT planning that follows COLREGs, the international rules for avoiding
-                collisions at sea. The work improved navigation efficiency by 30% and reduced potential collision rates by 25%.
+                I implemented and compared Velocity Obstacle, Rapidly-exploring Random Tree (RRT) and hybrid
+                VO-RRT-COLREGs path planners, classifying each encounter and choosing the avoidance maneuver that
+                COLREGs, the international rules for avoiding collisions at sea, require.
               </p>
               <p class="project-more">A full write-up is coming soon.</p>
             </div>
@@ -388,7 +356,7 @@
         <div class="section-body">
           <p class="pub">
             <cite class="pub-title">GenMOR: Learning and Generating Pareto-Aware Solutions for Multi-Objective Planning with Variational Autoencoders</cite>
-            <span class="pub-authors"><strong>A. K. Roy</strong>, S. Hasnayeen, H. Rahamani</span>
+            <span class="pub-authors"><strong>A. K. Roy</strong>, S. Hasnayeen, H. Rahmani</span>
             <span class="pub-venue">Manuscript in preparation</span>
           </p>
         </div>
@@ -412,6 +380,29 @@
                   </ul>
                 </div>
               </li>
+              <li>
+                <span class="when">Aug 2024 – Dec 2024</span>
+                <div>
+                  <h3>Artificial Intelligence Researcher</h3>
+                  <p class="where">AIG Lab, Missouri State University</p>
+                  <ul>
+                    <li>Built maritime simulation environments in Panda3D to test autonomous surface vessel navigation in head-on, crossing, overtaking, multi-vessel and traffic-separation-scheme scenarios.</li>
+                    <li>Implemented and compared Velocity Obstacle (VO), Rapidly-exploring Random Tree (RRT) and hybrid VO-RRT-COLREGs path planners, classifying each encounter and choosing the avoidance maneuver the collision regulations require.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="when">Jan 2023 – Aug 2023</span>
+                <div>
+                  <h3>Operations Assistant</h3>
+                  <p class="where">EFactory, Robert W. Plaster Free Enterprise Center, Missouri State University</p>
+                  <ul>
+                    <li>Kept daily operations running for EFactory, Missouri State’s business incubator: tracked and updated team tasks in Trello and scheduled meetings for staff and the startups based in the building.</li>
+                    <li>Managed stakeholder data in spreadsheets and built charts of growth over time for staff reporting.</li>
+                    <li>Troubleshot computer and technology issues for the businesses in the building, and helped organize business and networking events.</li>
+                  </ul>
+                </div>
+              </li>
             </ol>
           </div>
         </section>
@@ -427,7 +418,7 @@
                   <h3>MS in Computer Science</h3>
                   <p class="where">Missouri State University, with a Data Science Certification</p>
                   <ul>
-                    <li>Coursework: Data Analytics, Introduction to AI, Explainable AI, Natural Language Processing, Generative AI</li>
+                    <li>Coursework: Generative AI, Natural Language Processing, Data Analytics, Introduction to AI, Explainable AI, Information Retrieval, Introduction to Data Science, Research Methods</li>
                   </ul>
                 </div>
               </li>
@@ -437,7 +428,7 @@
                   <h3>BS in Computer Science, minor in Mathematics</h3>
                   <p class="where">Missouri State University</p>
                   <ul>
-                    <li>Coursework: Calculus I and II, Discrete Mathematics, Statistics, Data Mining</li>
+                    <li>Coursework: Data Structures, Algorithms, Calculus I and II, Discrete Mathematics, Statistics, Data Mining</li>
                   </ul>
                 </div>
               </li>
@@ -451,7 +442,8 @@
           <div class="section-body">
             <ul class="plain-list">
               <li>International Excellence Award <span class="detail">Missouri State University</span></li>
-              <li>Top 5 speaker, Hoosier Invitational debate tournament <span class="detail">Indiana University Bloomington</span></li>
+              <li>Top 5 national speaker ranking, Hoosier Invitational <span class="detail">Indiana University Bloomington</span></li>
+              <li>Top 10 national competitive ranking across 50+ debates <span class="detail">Cross Examination Debate Association</span></li>
               <li>Physics, Astronomy, and Materials Science Department Scholarship <span class="detail">Missouri State University</span></li>
               <li>Holt V. Spicer Debate Forum Scholarship <span class="detail">Missouri State University</span></li>
             </ul>
@@ -463,16 +455,52 @@
           <div class="section-head"><h2 class="section-title" id="skills-title">Skills</h2></div>
           <div class="section-body">
             <dl class="skills">
-              <dt>Programming</dt><dd>Python, C, C++, Java</dd>
-              <dt>Machine learning</dt><dd>PyTorch, TensorFlow, Keras, scikit-learn, Apache Spark MLlib</dd>
+              <dt>Programming</dt><dd>Python, C, C++, Java, Bash/Unix shell, HTML/JavaScript</dd>
+              <dt>Machine learning</dt><dd>PyTorch, TensorFlow, Keras, scikit-learn, Apache Spark MLlib, Hugging Face Transformers</dd>
+              <dt>Generative models</dt><dd>Autoencoders, variational autoencoders (VAE), conditional VAE</dd>
+              <dt>Optimization</dt><dd>Multi-objective optimization, Pareto dominance</dd>
+              <dt>NLP</dt><dd>BERT fine-tuning, extractive QA (SQuAD 2.0), text classification, spaCy</dd>
+              <dt>Uncertainty and evaluation</dt><dd>Model calibration (ECE, Brier score), selective prediction and abstention</dd>
               <dt>Explainability</dt><dd>LIME, SHAP, Grad-CAM, LRP, SmoothGrad</dd>
               <dt>Data and visualization</dt><dd>pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly</dd>
-              <dt>NLP and vision</dt><dd>spaCy, OpenCV</dd>
+              <dt>Computer vision</dt><dd>OpenCV</dd>
               <dt>Simulation and 3D</dt><dd>Panda3D, Unity ML-Agents, Blender</dd>
-              <dt>Databases</dt><dd>MySQL, Firebase</dd>
-              <dt>Tools</dt><dd>Git, GitHub, Jira, Jupyter Notebook, Google Colab</dd>
-              <dt>Languages</dt><dd>English (proficient), Bengali (native), Hindi (speaking proficiency), French (elementary), Greek (elementary)</dd>
+              <dt>Databases and web</dt><dd>MySQL, Firebase, Flask</dd>
+              <dt>Tools</dt><dd>Git, GitHub, Jira, Jupyter, Google Colab, Trello</dd>
+              <dt>Languages</dt><dd>English (proficient), Bengali (proficient), Hindi (proficient), French (elementary)</dd>
             </dl>
+          </div>
+        </section>
+
+        <!-- ============ Volunteering ============ -->
+        <section class="section" id="volunteering" aria-labelledby="vol-title">
+          <div class="section-head"><h2 class="section-title" id="vol-title">Volunteering</h2></div>
+          <div class="section-body">
+            <ol class="timeline">
+              <li>
+                <span class="when">Jan 2022 – Dec 2024</span>
+                <div>
+                  <h3>Volunteer</h3>
+                  <p class="where">Ozark Food Harvest, Springfield, MO</p>
+                  <ul>
+                    <li>Organized Lambda Chi Alpha fundraising events, such as Watermelon Bash and LambdaCafe, with other fraternities and sororities, raising over $20,000 for Ozark Food Harvest.</li>
+                    <li>Packed food for distribution to families in need through the regional food bank.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="when">Jan 2018 – Dec 2020</span>
+                <div>
+                  <h3>Executive Member</h3>
+                  <p class="where">AHOBAN Foundation, Dhaka, Bangladesh</p>
+                  <ul>
+                    <li>Organized fundraising events for underrepresented communities and helped deliver food and clothing to families hit by monsoon flooding, and warm clothes during winter.</li>
+                    <li>Tutored a class of 15 children in math and English through the AHOBAN Education initiative.</li>
+                    <li>Raised funds to send underprivileged children to school free of charge, covering costs such as school uniforms and books.</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
           </div>
         </section>
       </div>

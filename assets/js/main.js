@@ -204,7 +204,7 @@
       item.dataset.topics.split("|").forEach((t) => counts.set(t, (counts.get(t) || 0) + 1));
     });
 
-    const order = ["Explainable AI", "NLP", "Generative models", "Data science", "Robotics and simulation", "Systems"];
+    const order = ["Generative models", "Uncertainty", "NLP", "Explainable AI", "Data science", "Systems"];
     const topics = [...counts.keys()].sort((a, b) => {
       const ia = order.indexOf(a), ib = order.indexOf(b);
       return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
@@ -246,7 +246,7 @@
   const sectionsOnHome = [
     ["About", "about"], ["Research", "research"], ["Projects", "projects"],
     ["Publications", "publications"], ["Experience", "experience"], ["Education", "education"],
-    ["Awards", "awards"], ["Skills", "skills"], ["Contact", "contact"],
+    ["Awards", "awards"], ["Skills", "skills"], ["Volunteering", "volunteering"], ["Contact", "contact"],
   ];
 
   function baseCommands() {
